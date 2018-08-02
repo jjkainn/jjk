@@ -1,0 +1,78 @@
+/* BUTTONS */
+
+	.buttons{ left:850px; top: 70px; width: 180px; height: 30px; position: absolute; }
+
+	.buttons a{
+		display:block; float:left; margin:0 7px 0 0; background-color:#f5f5f5;
+		border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee;
+
+		font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+		font-size:100%; line-height:130%; text-decoration:none;
+		font-weight:bold; color:#565656; cursor:pointer; padding:5px 10px 6px 7px; /* Links */
+	}
+	
+	.buttons a img{ margin:0 3px -3px 0 !important; padding:0; border:none; width:16px; height:16px; }
+	/* STANDARD */
+
+	.buttons a:hover{ background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699; }
+	.buttons a:active{ background-color:#6299c5; border:1px solid #6299c5; color:#fff; }
+	.buttons a:visited { font-size:12px; color:#565656; background-color:#f5f5f5; TEXT-DECORATION: none; }
+	
+	
+	.divButtons a{
+		display:block; float:left; margin:0 7px 0 0; background-color:#b6dffd;
+		border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee;
+
+		font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+		font-size:100%; line-height:130%; text-decoration:none;
+		font-weight:bold; color:#565656; cursor:pointer; padding:5px 10px 6px 7px; /* Links */
+	}
+	.divButtons a img{ margin:0 3px -3px 0 !important; padding:0; border:none; width:16px; height:16px; }
+	/* STANDARD */
+
+	.divButtons a:hover{ background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699; }
+	.divButtons a:active{ background-color:#6299c5; border:1px solid #6299c5; color:#fff; }
+	.divButtons a:visited { font-size:12px; color:#565656; background-color:#f5f5f5; TEXT-DECORATION: none; }
+	
+	<!-- 特殊的 -->
+	.special_a a{
+		margin:0 7px 0 0; background-color:#B0E2FF; 
+		border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee;
+		
+		font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+		font-size:100%; line-height:130%; text-decoration:none; font-weight:bold;
+		color:#565656; cursor:pointer; padding:5px 10px 6px 7px; /* Links */
+	}
+	
+	.special_a a img{
+		margin:0 3px -3px 0 !important; padding:0;
+		border:none; width:16px; height:16px;
+	}
+	/* STANDARD */
+
+	.special_a a:hover{ background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699; }
+	.special_a a:active{ background-color:#6299c5; border:1px solid #6299c5; color:#fff; }
+	.special_a a:visited { font-size:12px; color:#565656; background-color:#f5f5f5; TEXT-DECORATION: none; }
+	
+	<!-- 特殊的 -->
+	.special_b button{
+		margin:0 7px 0 0; background-color:#B0E2FF; 
+		border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee;
+		
+		font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+		font-size:100%; line-height:130%; text-decoration:none; font-weight:bold;
+		color:#565656; cursor:pointer; padding:5px 10px 6px 7px; /* Links */
+	}
+	
+	.specialbutton{
+		margin:0 7px 0 0; background-color:#B0E2FF; 
+		border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee;
+		
+		font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+		font-size:100%; line-height:130%; text-decoration:none; font-weight:bold;
+		color:#565656; cursor:pointer; padding:5px 10px 6px 7px; /* Links */
+	}
+#btn_PTZ{ padding-left:75px;}
+#btn_PTZ1{margin-top:135px;}
+#btn_LINK{padding-left:75px;}
+#btn_LINK1{padding-top:51px;}

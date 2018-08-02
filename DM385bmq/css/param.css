@@ -1,0 +1,34 @@
+body{font-size:12px;font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;}
+.SuperDiv{border:1px solid gray;}
+.param_top{	text-align:left;	height:54px;	width:800px;	background:url(../img/param/param_top_bg.png) ;overflow:hidden;}
+.param_top_buttons{	margin-top:12px;	margin-left:710px;	position:relative;height:30px;font-size:12px;}
+.param_center{	height:426px;	width:800px;	background:url(../img/param/param_bg.png); overflow:hidden;text-align:left;}
+.param_content{	width:600px;	margin-top:27px;	margin-left:82px;*margin-left:95px;	position:relative;}
+.param_content_top{	width:576px;	height:26px;	overflow:hidden;}
+.param_content_center{	width:576px; 	height:315px; overflow:hidden;background:url(../img/param/param_center_bg.png) repeat-y;}
+.param_content_bottom{	width:576px;	height:26px;}
+.param_tip{	top:459px;left:605px;position:absolute;font-size:15px;color:#3c5c87;}
+.param_img{top:390px;*top:402px;left:691px;width:71px;height:72px;position:absolute;}
+<!-- 系统管理 -->
+.param_sys{	margin-left:20px;margin-top:2px;font-size:12px;text-align:left;}
+.param_div{	margin-top:4px;margin-left:10px;}
+
+.param_span{width:90px;color:#3c5c87;display:-moz-inline-box;display:inline-block;}
+.param_standardvalue{width:152px;display:-moz-inline-box;display:inline-block;z-index:2000}
+.param_standardvalue new{width:80px;display:-moz-inline-box;display:inline-block;z-index:2000}
+.param_standardvalue1{width:140px;display:-moz-inline-box;display:inline-block;z-index:2000}
+.param_standardspan{width:120px;color:#3c5c87;display:-moz-inline-box;display:-moz-inline-box;z-index:2000}
+.param_standardspan1{width:50px;color:#3c5c87;display:-moz-inline-box;display:inline-block;z-index:2000}
+.param_standardspan2{width:57px;color:#3c5c87;display:-moz-inline-box;display:inline-block;z-index:2000}
+.param_standardselect{width:140px;margin:0 0 0 0;display:-moz-inline-box;display:inline-block;z-index:2000}
+
+.input_tip{color:#378405;}
+.param_hr{width:93%;text-align:left;float:left;*float:none;height:1px; margin:0 0 0 20;line-height:0px;padding:0 0 0 0;color:gray}
+.param_std_hr{width:93%;color:gray}
+input{	margin:0 0 0 0;}
+input{ height:expression(this.type=="text"?"20px":"style"); 
+       width:expression(this.type=="text"?"152px":"style";
+}
+
+
+

@@ -1,0 +1,13 @@
+#myTimeDiv{position:absolute;border:1px solid #000080;left:0px;top:5px;width:256px;*width:250px;display:none;font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;}
+.timeTable{font-size:12px;text-align:center;background-color:#EEEEFF;border-bottom:1px solid gray;width:100%;}
+.td_normal{border:0; width:20px;height:20px;cursor:pointer;color:#A0522D;background-color:#EEEEFF;}
+.td_mouseover{background-color:#030085;cursor:pointer;color:#ffffff;width:20px;height:20px;border:0;}
+.td_unable{border:0; width:20px;height:20px;color:#000000;background-color:#EEEEFF;}
+.table_head{color;#800000;text-align:center;padding-top:3px;cursor:default;line-height:25px;font:bolder 12px ËÎÌו;height:25px;}
+
+.timeInputDiv{width:290px;*width:293px;background-color:#EEEEFF;vertical-align:center;height:24px;over-flow:hidden;margin:0 0 0 0px;}
+/*.timeInputDiv{width:100%;*width:103%;background-color:#EEEEFF;vertical-align:center;height:24px;over-flow:hidden;margin:0 0 0 0px;}
+*/
+.time_input{width:20px;border:1px solid gray;background-color:#fafaed;margin:0px 0 0 5px;}
+.submitSpan{height:18px;line-height:18px;background-color:#7eb8f4;color:#1d1d1e;width:40px;text-align:center;font-size:12px;margin:0 0 0 40px;cursor:pointer;border:0;}
+.displayTimeSpan{width:60px;height:24px;line-height:24px;font-size:12px;color:#03350d;margin:0 0 0 20px;}

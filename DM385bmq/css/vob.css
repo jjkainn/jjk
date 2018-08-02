@@ -1,0 +1,27 @@
+span{display:-moz-inline-box;display:inline-block;}
+.vob_content{margin-left:22px;margin-top:10px;width:756px;height:402px;background-color:#bdbebe;border:2px solid #ffffff;}
+.vob_center{margin-left:11px;margin-top:14px;width:730px;height:368px;background-color:#d6d6d6;border:1px solid #073ba0;}
+.videoPanel{margin-left:3px;*margin-left:3px;margin-top:2px;*margin--top:3px;width:472px;*width:476px;height:360px;*height:360px;
+			border:2px solid #000000;background-color:#ffffff;vertical-align:top;}
+.video{width:468px;height:351px;}
+.center_seperator{margin-left:2px;*margin-left:6px;width:1px;height:366px;background-color:gray;}
+.videoListPanel{margin-left:2px;*margin-left:5px;width:232px;height:366px;overflow:hidden;vertical-align:top;}
+.videoList{margin-top:3px;width:230px;height:265px;border:1px solid #000000;background-color:#b3d9fb;}
+
+.querySpan{height:30px;margin-top:5px;background:url("../img/input_bg.gif") no-repeat; width:150px;}
+.queryInput{height:29px;padding-top:5px;*padding-top:0px;width:145px;border:0px;background:transparent;line-height:24px;font-size:12px;margin-left:3px;}
+.queryButton{margin-left:8px;width:60px;height:28px;*height:30px;margin-top:5px;vertical-align:top;background-color:#0783f3;border:1px solid #0a350b;font-size:14px;font-family:"ºÚÌå";color:#daebd8;cursor:pointer;}
+
+.videoListTop{text-align:center;font-family:"ºÚÌå";font-size:15px;width:220px;margin-top:6px;font-weight:bold}
+.videoListCenter{margin:3px 0 0 4px;height:245px;width:220px;overflow-y:auto;}
+
+.videoSimpleInfo{border:1px solid gray; width:200px;height:23px;margin-top:2px;text-align:center;line-height:23px;cursor:pointer;}
+.videoIndex{width:25px;background-color:#b3d9fb;height:23px;}
+.videoFileName{width:185px;width:169px;background-color:#ffffff;height:23px;margin:0 0 0 0 ;border-left:1px solid gray;}
+.videoInfo{display:block;}
+.videoDetailInfos{display:none;}
+.videoDetailInfo{border:1px solid gray; width:159px;*width:170px;height:22px;margin-left:31px;*margin-left:30px;padding-left:8px;line-height:22px;background-color:#e3e3e3}
+
+.videoListBottom{width:237px;height:20px;margin-left:-3px;margin-top:128px;text-align:center;font-size:12px;}
+#videoList{margin-top:40px;}
+

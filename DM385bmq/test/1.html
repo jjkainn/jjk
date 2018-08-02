@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<base target="_self">  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta http-equiv="pragma" content="no-cache">  
+<meta http-equiv="cache-control" content="no-cache,must-ridate">  
+<meta http-equiv="expires" content="0">  
+  
+<title>tab页切换</title>  
+<link rel="stylesheet" type="text/css" href="../js/bootstrap.css" />  
+<style type="text/css">  
+</style>  
+</head>  
+  
+<body>  
+<p style="display:none;">  
+    1.参考网站：http://www.runoob.com/bootstrap/bootstrap-tab-plugin.html  
+    2..fade增加淡入淡出效果；添加 .fade 到每个 .tab-pane 后面;  
+    3.第一个标签页必须添加 .in 类，以便淡入显示初始内容;  
+</p>  
+  
+<!-- tab标签 -->  
+<ul id="myTab" class="nav nav-tabs">  
+   <li class="active">  
+      <a href="#home" data-toggle="tab">  
+         W3Cschool Home  
+      </a>  
+   </li>  
+  
+   <li>  
+    <a href="#ios" data-toggle="tab">  
+        iOS  
+    </a>  
+   </li>  
+   <li class="dropdown">  
+      <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">  
+          Java   
+         <b class="caret"></b>  
+      </a>  
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">  
+         <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>  
+         <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>  
+      </ul>  
+   </li>  
+</ul>  
+  
+<!-- 每个tab页对应的内容 -->  
+<div id="myTabContent" class="tab-content">  
+   <div class="tab-pane fade in active" id="home">  
+      <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点。</p>  
+   </div>  
+   <div class="tab-pane fade" id="ios">  
+      <p>iOS 是一个由苹果公司开发和发布的手机操作系统。</p>  
+   </div>  
+   <div class="tab-pane fade" id="jmeter">  
+      <p>jMeter 是一款开源的测试软件。</p>  
+   </div>  
+   <div class="tab-pane fade" id="ejb">  
+      <p>EJB是一个创建高度可扩展性和强大企业级应用程序的开发架构。</p>  
+   </div>  
+</div>  
+  
+  
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>  
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>  
+<script type="text/javascript">  
+  
+  
+</script>  
+</body>  
+  
+</html>  

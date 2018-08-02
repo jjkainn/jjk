@@ -1,0 +1,48 @@
+body {
+	margin-left: 0px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	TEXT-ALIGN: center;	
+}
+div{margin:auto;}
+
+.SuperDiv{	MARGIN-RIGHT: auto;	MARGIN-LEFT: auto; 	height:480px;	width:800px;	position: relative;overflow:hidden;}
+.button_img{	cursor:pointer;}
+a:visited {font-size:12px;color:#12523d;TEXT-DECORATION: none}
+a:active {font-size:12px;color:#12523d;TEXT-DECORATION: none}
+a:hover {font-size:12px;color:#12523d;LEFT: 1px; BORDER-BOTTOM: #ff6600 1px dotted; }
+a:link {font-size:12px;	color:#12523d;	TEXT-DECORATION: none}
+#superhintbox{
+	position:absolute;
+	top: 0;
+	left:0;
+	width:140px;
+	visibility: hidden;
+}
+iframe#fram_bk{border:0;position:absolute;display:none;z-index:0;width: 140px;height:18px;}
+#hintbox{ /*CSS for pop up hint box */
+	position:absolute;
+	top: 0;
+	background-color: lightyellow;	
+	padding: 3px;
+	border:1px solid black;
+	font:normal 11px Verdana;
+	width: 140px; /*Default width of hint.*/ 
+	line-height:18px;
+	z-index:100002;
+	visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+	font-weight: bold;
+	color: navy;
+	margin: 3px 8px;
+}
+#calendarDiv{
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index:100001;
+	display: none;
+}
