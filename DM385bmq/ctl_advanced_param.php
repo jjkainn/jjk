@@ -308,7 +308,7 @@
 	function setServerIP(){
 		if(isset($_POST['serverIP'])){
 			$newpath	= $_POST['serverIP'];
-			print_r($newpath);die;
+			// print_r($newpath);die;
 			$streamtype = $_POST['streamtype'];
 			/*$chan = getMediaStreamType();
 			$chanNo = $chan['LiveStreamType'];*/

@@ -839,27 +839,40 @@
 											// 
 											RTMPreg = /^rtmp\:\/\/(.){1,}\:(.){1,}\/(.){1,}$/;
 
-											RMTPres = /^rtmp\:\/\/(.){1,}\/(.){1,}$/;
+											RTMPres = /^rtmp\:\/\/(.){1,}\/(.){1,}$/;
 
 											var info = "rtmp stream format is not correct, please refer to the following format: rtmp://127.0.0.1:1935/live";
 
-											if(!RMTPres.test(serverIP)){
-
-												// if(lang == 'CH'){
-												// 	info = "RTMP流格式不正确，请参考以下格式：rtmp://127.0.0.1:1935/live";
-												// }
-												// alert(info);return;
-												// 
-												if (!RTMPreg.test(serverIP)) {
-
+											if(RTMPreg.test(serverIP)){
+			
+												$.post("ctl_advanced_param.php?action=setServerIP",{"serverIP":serverIP,"streamtype":0},function(msg){
 													if(lang == 'CH'){
-
-														info = "RTMP流格式不正确，请参考以下格式：rtmp://127.0.0.1:1935/live 或 rtmp://127.0.0.1/live";
+														var info = "主码流服务器地址修改成功";
+														var errorInfo = "修改未成功，请检查参数";
+														var error1Info = "未能修改成功";
+													}else{
+														var info = "Success";
+														var errorInfo = "Modification is not successful, please check the parameter";
+														var error1Info = "Modification is not successful";
 													}
+													if(msg == 1){
+														alert(info);
+													}else if(msg == 'error'){
+														alert(errorInfo);
+													}else{
+														alert(error1Info);
+													}
+												});
+											
+											} else if (RTMPres.test(serverIP)) {
+												
+												var port = ":1935";
 
-													alert(info);return;
-												}  else {
-													$.post("ctl_advanced_param.php?action=setServerIP",{"serverIP":serverIP,"streamtype":0},function(msg){
+												var Length = serverIP.lastIndexOf('/');
+
+												var serverIP = (insert_item(serverIP,port,Length));
+
+												$.post("ctl_advanced_param.php?action=setServerIP",{"serverIP":serverIP,"streamtype":0},function(msg){
 														if(lang == 'CH'){
 															var info = "主码流服务器地址修改成功";
 															var errorInfo = "修改未成功，请检查参数";
@@ -877,36 +890,17 @@
 															alert(error1Info);
 														}
 													});
-												}
+													
 											} else {
 
-												// var serverIP = "rtmp://127.0.0.1:/live";
+													if(lang == 'CH'){
 
-												var port = ":1935";
+														info = "RTMP流格式不正确，请参考以下格式：rtmp://127.0.0.1:1935/live 或 rtmp://127.0.0.1/live";
+													}
 
-												var Length = serverIP.lastIndexOf('/');
-
-												var serverIP = (insert_item(serverIP,port,Length));
-											}
+													alert(info);return;
+												}
 											//var reg = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
-											$.post("ctl_advanced_param.php?action=setServerIP",{"serverIP":serverIP,"streamtype":0},function(msg){
-												if(lang == 'CH'){
-													var info = "主码流服务器地址修改成功";
-													var errorInfo = "修改未成功，请检查参数";
-													var error1Info = "未能修改成功";
-												}else{
-													var info = "Success";
-													var errorInfo = "Modification is not successful, please check the parameter";
-													var error1Info = "Modification is not successful";
-												}
-												if(msg == 1){
-													alert(info);
-												}else if(msg == 'error'){
-													alert(errorInfo);
-												}else{
-													alert(error1Info);
-												}
-											});
 										}
 
 											function insert_item(str,item,index){//js字符串插入方法
@@ -920,7 +914,8 @@
 													serverIP+=tmp+item+estr;
 
 													return serverIP;
-												}
+											}
+											
 									</script>
 								</div></tr>
 								<tr><div>
