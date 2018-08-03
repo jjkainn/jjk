@@ -1,0 +1,5 @@
+1.https://www.cnblogs.com/shishuo365/p/5862613.html  RTMP协议文档
+2.https://blog.csdn.net/ly402609921/article/details/52769076 RTMP协议文档
+3.https://www.cnblogs.com/loveyoume/p/6076101.html socket简单介绍
+4.https://blog.csdn.net/davebobo/article/details/76557596  RTMP案例实例
+5.https://blog.csdn.net/noahsun1024/article/details/52177007 RTMP协议规范
