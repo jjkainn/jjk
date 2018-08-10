@@ -28,6 +28,7 @@
     $Lan_Main["Orchestrator"]=array("CH"=>"配置","EN"=>"Orchestrator");
     $Lan_Main["Wifi"]=array("CH"=>"wifi参数","EN"=>"Wifi");
 	$Lan_Main["Watch"]=array("CH"=>"观看直播视频","EN"=>"Watch the live video");
+	$Lan_Main["Getlist"]=array("CH"=>"登录获取频道","EN"=>"Getlist");
 	$Lan_Main["Live"]=array("CH"=>"直播开启/关闭","EN"=>"Live");
 	$Lan_Main["Record"]=array("CH"=>"录像开启/关闭","EN"=>"Record");
 	$Lan_Main["Textn"]=array("CH"=>"练习开始/关闭","EN"=>"exercise");

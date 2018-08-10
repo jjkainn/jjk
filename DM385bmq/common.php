@@ -526,6 +526,26 @@ input[type="checkbox"]{
 			return false;
 		}
 	</script>
+    <!-- <form action="witness_lg.php" method="post"> -->
+		<div style="margin-left: 25em; margin-top: 10em; background-color: #FF4500; background-color: 1px; display: none" id="none">
+			<table bgcolor="1">
+				<tr>
+					<td>目睹用户名</td>
+					<td><input type="text" name="email" id="mdemail" value=""></td>
+				</tr>
+					<tr>
+					<td>目睹密码</td>
+					<td><input type="password" name="password" id="mdpassword" value=""></td>
+				</tr>
+					<tr>
+					<td></td>
+					<td><!-- <input type="submit" value="登录"> --><button id="mddl">登录</button></td>
+				</tr>
+			</table>
+		</div>
+	<!-- </form> -->
+
+
 </div>
 <!--导航2-->
 					<div class="header2">
@@ -562,7 +582,7 @@ input[type="checkbox"]{
 								<tbody id="table1">
 <!--									观看直播视频-->
 							<tr id="Livebutton">
-								<td></td>
+								<td><a id="loginlist" href="javascript:vivo(0)" role="button" class="btn btn-info" data-toggle="modal"><?php echo $Lan_Main["Getlist"][$Language_Type];?></a></td>
 								<td> <a id="modal-438185" href="#modal-container-438185" role="button" class="btn btn-info" data-toggle="modal"><?php echo $Lan_Main["Watch"][$Language_Type];?></a></td>
 							</tr>
 							<!--视频窗口-->
@@ -1695,6 +1715,37 @@ document.getElementById("img8").style.display="block";
 		});
 	}
 	$('input[name="4Gstate"]').on('switchChange.bootstrapSwitch', Switch_Process4G);
+
+	//登录调用目睹接口
+	$("#loginlist").click(function(){
+		$("#none").toggle();
+	})
+</script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+		//登录接口传值调用
+	$("#mddl").click(function(){
+		var email = $("#mdemail").val();
+		var password = $("#mdpassword").val();
+		$.ajax({
+				type:'post',
+				url:"witness_lg.php",
+				data:{email:email,password:password},
+				dataType:'json',
+				success:function(data){
+					if (data == 102) {
+						alert("不存在该用户,请重新输入");
+					} else if (data == 103) {
+						alert("密码错误,请重新输入");
+					} else if (data == 101) {
+						alert("参数错误,请重新输入");
+					} else {
+						// window.location.href="Channel.php?data="+data;
+						alert(data)
+					}			
+				}
+		})
+	})
 </script>
 <?php
 	$ret = GetDeviceID(); 
